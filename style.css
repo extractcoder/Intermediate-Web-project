@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Contact Form */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* To-Do List */
+.todo-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.todo-container h2 {
+  margin-bottom: 10px;
+}
+
+#todoInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#todoList li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #eef;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#todoList li.completed {
+  text-decoration: line-through;
+  background-color: #ccc;
+}

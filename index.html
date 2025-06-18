@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>My Webpage</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#todo">To-Do</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <form id="contactForm" name="contact">
+        <h2>Contact Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="abc" required/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="abc@gmail.com" required/>
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="your queries" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- To-Do List Section -->
+    <aside class="todo-container" id="todo">
+      <h2>Dynamic To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Add a task..." />
+      <button onclick="addTodo()">Add</button>
+      <ul id="todoList"></ul>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
